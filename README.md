@@ -1,50 +1,47 @@
-# React + TypeScript + Vite
+# React Discord Webhook Manager
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Un'applicazione React che permette di gestire webhook di Discord in modo semplice e intuitivo. Consente di:
+- Creare configurazioni per diversi webhook.
+- Personalizzare avatar e username per ogni webhook.
+- Inviare messaggi ai canali Discord tramite webhook.
+- Rinominare le configurazioni delle chat.
+- Gestire facilmente più webhook con un'interfaccia moderna in tema scuro.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Funzionalità principali
 
-## Expanding the ESLint configuration
+1. **Gestione delle chat**:
+   - Aggiungi nuove chat con configurazioni uniche.
+   - Rinomina le chat per una migliore organizzazione.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+2. **Invio di messaggi**:
+   - Invia messaggi personalizzati direttamente ai canali Discord.
 
-- Configure the top-level `parserOptions` property like this:
+3. **Personalizzazione**:
+   - Modifica avatar e username per ogni webhook.
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+4. **Persistenza dei dati**:
+   - Le configurazioni sono salvate automaticamente nel browser grazie a `localStorage`.
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+5. **Tema scuro**:
+   - Interfaccia utente moderna con un look scuro accattivante.
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+---
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+## 📦 Installazione
+
+Segui questi passaggi per eseguire l'applicazione in locale:
+
+### 1. Clona il repository
+
+git clone https://github.com/tuo-username/react-discord-webhook-manager.git
+cd react-discord-webhook-manager
+
+### 2. Installa le dipendenze (Assicurati di avere Node.js installato)
+npm install
+
+### 3. Avvia l'applicazione
+npm run dev
+
+L'app sarà disponibile su http://localhost:5173
